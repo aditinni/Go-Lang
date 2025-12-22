@@ -4,6 +4,13 @@ import "fmt"
 
 func main() {
 	fmt.Println("Hello, World!")
-	card := deck{"Ace of Spades", "Two of Hearts"}
-	card.print()
+	card := newDeckFromFile("MyCards.txt")
+	//card.print()
+	//hand, remainingCards := deal(card, 5)
+
+	//hand.print()
+	//remainingCards.print()
+	//fmt.Println(card.toString())
+	//card.saveToFile("MyCards.txt")
+	fmt.Println(card)
 }
